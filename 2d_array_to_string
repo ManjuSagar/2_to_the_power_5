@@ -1,0 +1,23 @@
+// Convert array in to csv string
+// "cerner_2tothe5th_2022"
+// "cerner_2^5_2022"
+
+
+var array2D = [ 
+                [ "a" , "2"] ,
+                [ "c" ,"d" ] 
+              ];
+  
+
+var csv = array2D
+  .map((item) => {
+    var row = item;
+    return row.join(",");
+  })
+  .join("\n");
+  console.log(csv);
+</script>
+
+// output will be like this 
+//a,2
+//c,d
